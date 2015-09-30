@@ -23,6 +23,10 @@ var map = curry(function(fn, items){
 	return items.map(fn);
 });
 
+var take = curry(function(number, items){
+	return items.slice(0, number);
+});
+
 var removeEmptyArrays = curry(function(myArray){
 	return myArray.filter(function(item){
 		return item.length > 0;
@@ -44,6 +48,7 @@ module.exports = {
 	get: get,
 	compose: compose,
 	map: map,
+	take: take,
 	removeEmptyArrays: removeEmptyArrays,
 	concatArrays: concatArrays,
 	fork: fork
