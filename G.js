@@ -35,10 +35,6 @@ var concatArrays = curry(function(arrays){
 	});
 });
 
-// var concatArrays = curry(function(array1, array2){
-// 	return array1.concat(array2);
-// });
-
 var fork = curry(function(lastly, f, g, x){
 	return lastly(f(x), g(x));
 });
