@@ -1,2 +1,2 @@
-### G
+# G
 ## Practicing functional programming
